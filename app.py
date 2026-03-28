@@ -1,4 +1,3 @@
-
 # module 10 - Flask Application
 # Lauren Brodsky 3/28/2026
 
@@ -9,5 +8,9 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
+@app.route("/about")
+def about_page():
+    return render_template('about.html')
+
 if __name__ == "__main__":
-      app.run(host="0.0.0.0", port=5002, debug=True)
+    app.run(host="0.0.0.0", port=5002, debug=True)
