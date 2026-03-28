@@ -17,19 +17,42 @@
 
 <body>
 
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            
+            <a href="/" class="navbar-brand">My Site</a>
+
+            <button
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                    <a href="/about" class="nav-item nav-link">About</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
     {% block body %}{% endblock %}
 
     <!-- Popper -->
     <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-shA6J1R5BVdWj1sjYTF4mHjPvp/jzgyol6VFvk8lWrcV4J6QKcH4qc9MB0em4uws"
         crossorigin="anonymous"
     ></script>
 
     <!-- Bootstrap JS -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-3sA3k+G/4zvA+2dh+vEPO3b+6LCdQ6gJBFdUnjXA6uXjx1cC0o62AVH1w8I"
         crossorigin="anonymous"
     ></script>
 
