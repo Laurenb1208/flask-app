@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
 </head>
+
 <body>
+
     {% block body %}{% endblock %}
+
+    <!-- Popper -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-shA6J1R5BVdWj1sjYTF4mHjPvp/jzgyol6VFvk8lWrcV4J6QKcH4qc9MB0em4uws"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-3sA3k+G/4zvA+2dh+vEPO3b+6LCdQ6gJBFdUnjXA6uXjx1cC0o62AVH1w8I"
+        crossorigin="anonymous"
+    ></script>
+
 </body>
 </html>
